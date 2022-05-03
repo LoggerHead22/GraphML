@@ -1,0 +1,7 @@
+Dataset,DataLen,metric,r2_metric
+ESOL,1128,0.865,0.826
+FreeSolv,642,1.385,0.865
+Lipophilicity,4200,0.953,0.371
+QM7,6834,59.312,0.753
+QM8,21786,0.022,0.541
+QM9,133885,8.656,0.772
