@@ -1,0 +1,62 @@
+--epochs=100 --device=0 --dataset=GEOM_3D_nmol50000_nconf5_nupper1000 --batch_size=256 --SSL_masking_ratio=0.15 --CL_similarity_metric=EBM_dot_prod --T=0.2 --normalize --AE_model=VAE --AE_loss=l2 --detach_target --beta=2 --alpha_1=1 --alpha_2=1 --num_interactions=6 --num_gaussians=51 --cutoff=10 --schnet_lr_scale=0.1 --dropout_ratio=0 --num_workers=8 --output_model_dir=../output/GraphMVP/GEOM_3D_nmol50000_nconf5_nupper1000/CL_1_VAE_1/6_51_10_0.1/0.15_EBM_dot_prod_0.2_normalize_l2_detach_target_2_100_0/pretraining
+Вс мар 12 16:39:31 MSK 2023
+start
+arguments	 Namespace(AE_loss='l2', AE_model='VAE', CL_neg_samples=1, CL_similarity_metric='EBM_dot_prod', JK='last', SSL_2D_mode='AM', SSL_masking_ratio=0.15, T=0.2, alpha_1=1.0, alpha_2=1.0, alpha_3=0.1, batch_size=256, beta=2.0, contextpred_neg_samples=1, csize=3, cutoff=10.0, dataset='GEOM_3D_nmol50000_nconf5_nupper1000', decay=0, detach_target=True, device=0, dropout_ratio=0.0, emb_dim=300, epochs=100, eval_train=True, gamma_joao=0.1, gamma_joaov2=0.1, gnn_lr_scale=1, gnn_type='gin', graph_pooling='mean', input_data_dir='', input_model_file='', lr=0.001, lr_scale=1, mask_edge=0, mask_rate=0.15, model_3d='schnet', normalize=True, num_filters=128, num_gaussians=51, num_interactions=6, num_layer=5, num_workers=8, output_model_dir='../output/GraphMVP/GEOM_3D_nmol50000_nconf5_nupper1000/CL_1_VAE_1/6_51_10_0.1/0.15_EBM_dot_prod_0.2_normalize_l2_detach_target_2_100_0/pretraining', readout='mean', runseed=0, schnet_lr_scale=0.1, seed=42, split='scaffold', verbose=False)
+Dataset: GEOM_3D_nmol50000_nconf5_nupper1000
+Data: Data(edge_attr=[24031550, 2], edge_index=[2, 24031550], id=[250000], mol_id=[250000], positions=[11514210, 3], x=[11514210, 2])
+Using 3d model	 schnet
+epoch: 1
+save model with loss: 0.89760
+CL Loss: 0.68140	CL Acc: 0.87046		AE Loss: 0.21619	AE Acc: 0.00000	Time: 276.70657
+epoch: 2
+save model with loss: 0.53019
+CL Loss: 0.50751	CL Acc: 0.93090		AE Loss: 0.02268	AE Acc: 0.00000	Time: 277.08208
+epoch: 3
+save model with loss: 0.50224
+CL Loss: 0.48270	CL Acc: 0.93869		AE Loss: 0.01955	AE Acc: 0.00000	Time: 277.03637
+epoch: 4
+save model with loss: 0.48705
+CL Loss: 0.46596	CL Acc: 0.94546		AE Loss: 0.02109	AE Acc: 0.00000	Time: 276.62696
+epoch: 5
+save model with loss: 0.47564
+CL Loss: 0.45243	CL Acc: 0.95115		AE Loss: 0.02321	AE Acc: 0.00000	Time: 276.86262
+epoch: 6
+save model with loss: 0.46651
+CL Loss: 0.44182	CL Acc: 0.95561		AE Loss: 0.02469	AE Acc: 0.00000	Time: 276.96049
+epoch: 7
+save model with loss: 0.45975
+CL Loss: 0.43440	CL Acc: 0.95825		AE Loss: 0.02535	AE Acc: 0.00000	Time: 275.62156
+epoch: 8
+save model with loss: 0.45306
+CL Loss: 0.42760	CL Acc: 0.96184		AE Loss: 0.02546	AE Acc: 0.00000	Time: 275.16045
+epoch: 9
+save model with loss: 0.44625
+CL Loss: 0.42099	CL Acc: 0.96449		AE Loss: 0.02526	AE Acc: 0.00000	Time: 275.76223
+epoch: 10
+save model with loss: 0.44134
+CL Loss: 0.41627	CL Acc: 0.96652		AE Loss: 0.02507	AE Acc: 0.00000	Time: 275.96084
+epoch: 11
+save model with loss: 0.43660
+CL Loss: 0.41163	CL Acc: 0.96829		AE Loss: 0.02497	AE Acc: 0.00000	Time: 275.74390
+epoch: 12
+save model with loss: 0.43231
+CL Loss: 0.40775	CL Acc: 0.96985		AE Loss: 0.02456	AE Acc: 0.00000	Time: 275.47039
+epoch: 13
+save model with loss: 0.43015
+CL Loss: 0.40576	CL Acc: 0.97113		AE Loss: 0.02439	AE Acc: 0.00000	Time: 275.80533
+epoch: 14
+save model with loss: 0.42713
+CL Loss: 0.40276	CL Acc: 0.97253		AE Loss: 0.02437	AE Acc: 0.00000	Time: 276.10383
+epoch: 15
+save model with loss: 0.42422
+CL Loss: 0.39988	CL Acc: 0.97365		AE Loss: 0.02434	AE Acc: 0.00000	Time: 275.79497
+epoch: 16
+save model with loss: 0.42256
+CL Loss: 0.39820	CL Acc: 0.97470		AE Loss: 0.02436	AE Acc: 0.00000	Time: 275.77207
+epoch: 17
+save model with loss: 0.41951
+CL Loss: 0.39470	CL Acc: 0.97642		AE Loss: 0.02481	AE Acc: 0.00000	Time: 275.42760
+epoch: 18
+save model with loss: 0.41752
+CL Loss: 0.39258	CL Acc: 0.97768		AE Loss: 0.02493	AE Acc: 0.00000	Time: 275.09848
+epoch: 19
